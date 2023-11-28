@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "f3ca36c1-e60b-473d-b9e6-d3c1f0cfd4c4",
+		"name": "Bank Customer Statement Processor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8993149"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/USER/Downloads/assigment-ama/records.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/processor/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"processor",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
